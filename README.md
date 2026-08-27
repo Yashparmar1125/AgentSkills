@@ -4,7 +4,7 @@ A curated collection of production-grade, domain-driven AI agent skills built fo
 
 ---
 
-## 🧭 Domain Navigation (23 Skills)
+## 🧭 Domain Navigation (24 Skills)
 
 | Domain | Focus | Skill Count | Jump |
 | :--- | :--- | :---: | :--- |
@@ -14,7 +14,7 @@ A curated collection of production-grade, domain-driven AI agent skills built fo
 | **🤖 AI & LLM Engineering** | Multi-model LLM client SDKs, multi-key rotation, model fallback cascades, streaming, and deep learning research exploration. | `2` | [Browse ↓](#-ai-llm) |
 | **🎨 Product Design & Behavioral UX** | UI/UX design systems, behavioral science & habit formation, design tokens, and distinctive frontend craftsmanship. | `5` | [Browse ↓](#-product-design) |
 | **📈 Growth, Marketing & AI SEO** | Generative Engine Optimization (GEO/AEO), technical SEO audits, ICP positioning, and content cluster strategy. | `5` | [Browse ↓](#-marketing-seo) |
-| **🛡️ Application Security & AppSec** | Production-grade security audits, OWASP ASVS/API verification, threat modeling, XSS/CSRF review, secret detection, and frontend hardening. | `1` | [Browse ↓](#-security) |
+| **🛡️ Application Security & AppSec** | Production-grade security audits, OWASP ASVS/API verification, threat modeling, XSS/CSRF review, secret detection, and frontend hardening. | `2` | [Browse ↓](#-security) |
 | **⚡ Agent Meta & Tooling** | Skills for skill discovery, agent capability expansion, and self-configuration. | `1` | [Browse ↓](#-agent-meta) |
 
 ---
@@ -104,6 +104,7 @@ A curated collection of production-grade, domain-driven AI agent skills built fo
 
 | Skill | Description | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
+| **`backend-security`** | Principal Application Security Engineer and Backend Security Architect specializing in Express, NestJS, Django, Flask, Spring Boot, REST APIs, GraphQL, database security, authentication, authorization, cryptography, SSRF/injection review, multi-tenancy, and production-grade backend vulnerability audits. Use when asked to perform a comprehensive security audit, threat model, API security assessment, OWASP ASVS/API verification, authorization/IDOR review, or backend security hardening. | [`domains/security/backend-security`](./domains/security/backend-security) | [`skills/backend-security`](./skills/backend-security) |
 | **`frontend-security`** | Principal Application Security Engineer specializing in React, Next.js, TypeScript, browser security, OWASP, web application security, authentication, authorization, and secure frontend architecture. Use when asked to perform a production-grade security audit, threat model, vulnerability assessment, XSS/CSRF review, secret detection, browser storage inspection, or frontend security hardening. | [`domains/security/frontend-security`](./domains/security/frontend-security) | [`skills/frontend-security`](./skills/frontend-security) |
 
 ### ⚡ Agent Meta & Tooling <a id="agent-meta"></a>
