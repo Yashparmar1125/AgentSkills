@@ -4,12 +4,12 @@ A curated collection of production-grade, domain-driven AI agent skills built fo
 
 ---
 
-## 🧭 Domain Navigation
+## 🧭 Domain Navigation (22 Skills)
 
 | Domain | Focus | Skill Count | Jump |
 | :--- | :--- | :---: | :--- |
 | **🏗️ Software Architecture & Engineering** | Staff-level architecture audits, modular design, dependency boundaries, database performance, and idiomatic quality across major frameworks. | `5` | [Browse ↓](#-architecture) |
-| **🧪 Automated Testing & QA Engineering** | Production-ready automated testing, component testing, golden tests, MSW mocks, and E2E testing pipelines. | `2` | [Browse ↓](#-testing-qa) |
+| **🧪 Automated Testing & QA Engineering** | Production-ready automated testing, component testing, backend API testing, golden tests, MSW mocks, and E2E testing pipelines. | `3` | [Browse ↓](#-testing-qa) |
 | **🚀 DevOps, CI/CD & Infrastructure** | CI/CD pipeline automation, immutable dependencies, concurrency management, least-privilege security, and quality gates. | `1` | [Browse ↓](#-devops-infra) |
 | **🤖 AI & LLM Engineering** | Multi-model LLM client SDKs, multi-key rotation, model fallback cascades, streaming, and deep learning research exploration. | `2` | [Browse ↓](#-ai-llm) |
 | **🎨 Product Design & Behavioral UX** | UI/UX design systems, behavioral science & habit formation, design tokens, and distinctive frontend craftsmanship. | `5` | [Browse ↓](#-product-design) |
@@ -36,11 +36,12 @@ A curated collection of production-grade, domain-driven AI agent skills built fo
 
 ### 🧪 Automated Testing & QA Engineering <a id="testing-qa"></a>
 
-> Production-ready automated testing, component testing, golden tests, MSW mocks, and E2E testing pipelines.
+> Production-ready automated testing, component testing, backend API testing, golden tests, MSW mocks, and E2E testing pipelines.
 
 | Skill | Description | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
 | **`frontend-testing`** | Senior Frontend Test Engineer and QA Automation specialist for React and Next.js applications. Use when asked to test frontend components, write unit/integration/E2E tests, set up React Testing Library, Vitest, Jest, Playwright, Cypress, MSW, test hooks, forms, state management, accessibility, data fetching, or build production-ready automated test suites for React or Next.js projects. | [`domains/testing-qa/frontend-testing`](./domains/testing-qa/frontend-testing) | [`skills/frontend-testing`](./skills/frontend-testing) |
+| **`backend-testing`** | Staff/Principal Backend Test Engineer, QA Automation Engineer, and Test Architect specializing in production-grade backend testing. Use when asked to test Node.js/Express/NestJS, Python/Django/Flask, or Java/Spring Boot APIs, databases, transactions, authentication, authorization, integrations, and E2E workflows. | [`domains/testing-qa/backend-testing`](./domains/testing-qa/backend-testing) | [`skills/backend-testing`](./skills/backend-testing) |
 | **`flutter-testing`** | Senior Flutter Test Engineer and QA Automation specialist for Flutter and Dart applications. Use when asked to test Flutter apps, write unit tests, widget tests, integration tests, golden tests, test Bloc/Riverpod/Provider/GetX state management, repositories, Dio/HTTP clients, platform channels, or build production-ready automated test suites for Flutter projects. | [`domains/testing-qa/flutter-testing`](./domains/testing-qa/flutter-testing) | [`skills/flutter-testing`](./skills/flutter-testing) |
 
 ---
@@ -123,10 +124,10 @@ Copy any specific skill into your global directory or project:
 
 ```bash
 # Windows (Global)
-cp -r domains/architecture/frontend-architecture %USERPROFILE%\.gemini\antigravity\builtin\skills\
+cp -r domains/testing-qa/backend-testing %USERPROFILE%\.gemini\antigravity\builtin\skills\
 
 # macOS / Linux (Global)
-cp -r domains/architecture/frontend-architecture ~/.gemini/antigravity/builtin/skills/
+cp -r domains/testing-qa/backend-testing ~/.gemini/antigravity/builtin/skills/
 ```
 
 ### 3. Install All Skills
