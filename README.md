@@ -6,14 +6,14 @@ A standardized collection of production-grade, domain-driven AI agent skills des
 
 ## Executive Overview
 
-This repository houses 25 modular, framework-agnostic agent skills organized across 8 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, and product design.
+This repository houses 28 modular, framework-agnostic agent skills organized across 8 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, infrastructure as code, and product design.
 
 ### Key Capabilities
 
 * **Software Architecture**: Staff-level audits, modular refactoring, API contract definitions, and dependency boundary enforcement across React, Next.js, Node.js, Python, Flutter, and Java Spring Boot.
 * **Application Security (AppSec)**: Comprehensive vulnerability auditing adhering to OWASP Top 10, OWASP ASVS v4.0, OWASP API Security Top 10, and OWASP MASVS/MSTG for frontend, backend, and mobile applications.
 * **Automated Testing & QA**: Automated test suite construction spanning Vitest, Jest, Playwright, React Testing Library, Mock Service Worker (MSW), integration pipelines, and database transaction testing.
-* **DevOps & CI/CD**: High-performance GitHub Actions, frozen dependency validation, matrix testing, concurrency management, and least-privilege release gates.
+* **DevOps, IaC & Continuous Delivery**: Production Infrastructure as Code (Terraform), server automation (Ansible), CI/CD pipelines (GitHub Actions), progressive delivery, and release quality gates.
 * **AI & LLM Integration**: Multi-model inference, OpenRouter SDK orchestration, model fallback cascades, rate-limit backoff, and deep learning research exploration.
 
 ---
@@ -25,7 +25,7 @@ This repository houses 25 modular, framework-agnostic agent skills organized acr
 | **Software Architecture** | Full-stack architecture audits, state management, dependency boundaries, database performance, and idiomatic quality. | `5` | [View Architecture Catalog](#software-architecture) |
 | **Application Security** | Production security audits, OWASP verification, threat modeling, XSS/CSRF review, IDOR/BOLA analysis, and secret detection. | `3` | [View Security Catalog](#application-security) |
 | **Automated Testing & QA** | Automated test suites, integration tests, E2E pipelines, MSW mock boundaries, and transaction rollback verification. | `3` | [View Testing Catalog](#automated-testing--qa) |
-| **DevOps & CI/CD** | CI/CD pipeline automation, immutable dependency locks, concurrency controls, least-privilege permissions, and quality gates. | `1` | [View DevOps Catalog](#devops--cicd) |
+| **DevOps, IaC & CI/CD** | Terraform infrastructure-as-code, Ansible automation, continuous delivery pipelines, and release gates. | `4` | [View DevOps Catalog](#devops-iac--cicd) |
 | **AI & LLM Engineering** | Client SDK orchestration, multi-key rotation, model fallback cascades, streaming JSON schemas, and research exploration. | `2` | [View AI & LLM Catalog](#ai--llm-engineering) |
 | **Product Design & UX** | UI/UX design systems, behavioral science, design tokens, responsive layouts, and frontend craftsmanship. | `5` | [View Product Design Catalog](#product-design--ux) |
 | **Growth & Technical SEO** | Generative Engine Optimization (GEO/AEO), technical SEO audits, ICP positioning, and content cluster architecture. | `5` | [View Growth & SEO Catalog](#growth--technical-seo) |
@@ -73,13 +73,16 @@ Production-grade automated test suite engineering, test architecture, mock isola
 
 ---
 
-### DevOps & CI/CD
+### DevOps, IaC & CI/CD
 
-Continuous integration and automated delivery engineering, pipeline optimization, concurrency management, and automated release quality gates.
+Infrastructure as Code (Terraform), automated server configuration (Ansible), continuous integration and continuous delivery pipelines with automated rollback and quality gates.
 
 | Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
 | **`continuous-integration`** | Principal DevOps & CI/CD Engineer specializing in GitHub Actions, DAG workflow design, frozen dependency locks (`npm ci`), caching, and production release gates. | [`domains/devops-infra/continuous-integration`](./domains/devops-infra/continuous-integration) | [`skills/continuous-integration`](./skills/continuous-integration) |
+| **`continuous-delivery`** | Principal Continuous Delivery Engineer specializing in multi-environment promotion, progressive delivery (blue/green, canary), automated rollback, and deployment health checks. | [`domains/devops-infra/continuous-delivery`](./domains/devops-infra/continuous-delivery) | [`skills/continuous-delivery`](./skills/continuous-delivery) |
+| **`terraform-iac`** | Principal Cloud Infrastructure Architect specializing in Terraform/OpenTofu, multi-cloud modules (AWS, Azure, GCP), remote state locking, drift detection, and plan risk review. | [`domains/devops-infra/terraform-iac`](./domains/devops-infra/terraform-iac) | [`skills/terraform-iac`](./skills/terraform-iac) |
+| **`ansible-automation`** | Principal Automation Engineer specializing in Ansible playbooks, idempotent role design, Ansible Vault secrets, rolling node updates, and server configuration. | [`domains/devops-infra/ansible-automation`](./domains/devops-infra/ansible-automation) | [`skills/ansible-automation`](./skills/ansible-automation) |
 
 ---
 
@@ -151,12 +154,12 @@ Every skill in this catalog is engineered to adhere to strict operational standa
 To mount these skills within an active project workspace, copy the desired skill directories into the project's `.agents/skills/` directory:
 
 ```bash
-# Example: Adding frontend-security and continuous-integration to your repository
-mkdir -p .agents/skills/frontend-security
-mkdir -p .agents/skills/continuous-integration
+# Example: Adding terraform-iac and ansible-automation to your repository
+mkdir -p .agents/skills/terraform-iac
+mkdir -p .agents/skills/ansible-automation
 
-cp -r /path/to/AgentSkills/skills/frontend-security/* .agents/skills/frontend-security/
-cp -r /path/to/AgentSkills/skills/continuous-integration/* .agents/skills/continuous-integration/
+cp -r /path/to/AgentSkills/skills/terraform-iac/* .agents/skills/terraform-iac/
+cp -r /path/to/AgentSkills/skills/ansible-automation/* .agents/skills/ansible-automation/
 ```
 
 ### 2. Global Installation (Machine-Wide)
