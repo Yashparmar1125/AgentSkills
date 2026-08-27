@@ -1,160 +1,200 @@
-# AgentSkills 🧠⚡
+# Agent Skills Repository
 
-A curated collection of production-grade, domain-driven AI agent skills built for **Google Antigravity (AGY)** and compatible Agentic AI coding environments.
+A standardized collection of production-grade, domain-driven AI agent skills designed for Google Antigravity (AGY) and compatible autonomous coding agent environments.
 
 ---
 
-## 🧭 Domain Navigation (25 Skills)
+## Executive Overview
 
-| Domain | Focus | Skill Count | Jump |
+This repository houses 25 modular, framework-agnostic agent skills organized across 8 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, and product design.
+
+### Key Capabilities
+
+* **Software Architecture**: Staff-level audits, modular refactoring, API contract definitions, and dependency boundary enforcement across React, Next.js, Node.js, Python, Flutter, and Java Spring Boot.
+* **Application Security (AppSec)**: Comprehensive vulnerability auditing adhering to OWASP Top 10, OWASP ASVS v4.0, OWASP API Security Top 10, and OWASP MASVS/MSTG for frontend, backend, and mobile applications.
+* **Automated Testing & QA**: Automated test suite construction spanning Vitest, Jest, Playwright, React Testing Library, Mock Service Worker (MSW), integration pipelines, and database transaction testing.
+* **DevOps & CI/CD**: High-performance GitHub Actions, frozen dependency validation, matrix testing, concurrency management, and least-privilege release gates.
+* **AI & LLM Integration**: Multi-model inference, OpenRouter SDK orchestration, model fallback cascades, rate-limit backoff, and deep learning research exploration.
+
+---
+
+## Domain Overview
+
+| Domain | Technical Focus | Skills | Direct Link |
 | :--- | :--- | :---: | :--- |
-| **🏗️ Software Architecture & Engineering** | Staff-level architecture audits, modular design, dependency boundaries, database performance, and idiomatic quality across major frameworks. | `5` | [Browse ↓](#-architecture) |
-| **🧪 Automated Testing & QA Engineering** | Production-ready automated testing, component testing, backend API testing, golden tests, MSW mocks, and E2E testing pipelines. | `3` | [Browse ↓](#-testing-qa) |
-| **🚀 DevOps, CI/CD & Infrastructure** | CI/CD pipeline automation, immutable dependencies, concurrency management, least-privilege security, and quality gates. | `1` | [Browse ↓](#-devops-infra) |
-| **🤖 AI & LLM Engineering** | Multi-model LLM client SDKs, multi-key rotation, model fallback cascades, streaming, and deep learning research exploration. | `2` | [Browse ↓](#-ai-llm) |
-| **🎨 Product Design & Behavioral UX** | UI/UX design systems, behavioral science & habit formation, design tokens, and distinctive frontend craftsmanship. | `5` | [Browse ↓](#-product-design) |
-| **📈 Growth, Marketing & AI SEO** | Generative Engine Optimization (GEO/AEO), technical SEO audits, ICP positioning, and content cluster strategy. | `5` | [Browse ↓](#-marketing-seo) |
-| **🛡️ Application Security & AppSec** | Production-grade security audits, OWASP ASVS/API verification, threat modeling, XSS/CSRF review, secret detection, and frontend hardening. | `3` | [Browse ↓](#-security) |
-| **⚡ Agent Meta & Tooling** | Skills for skill discovery, agent capability expansion, and self-configuration. | `1` | [Browse ↓](#-agent-meta) |
+| **Software Architecture** | Full-stack architecture audits, state management, dependency boundaries, database performance, and idiomatic quality. | `5` | [View Architecture Catalog](#software-architecture) |
+| **Application Security** | Production security audits, OWASP verification, threat modeling, XSS/CSRF review, IDOR/BOLA analysis, and secret detection. | `3` | [View Security Catalog](#application-security) |
+| **Automated Testing & QA** | Automated test suites, integration tests, E2E pipelines, MSW mock boundaries, and transaction rollback verification. | `3` | [View Testing Catalog](#automated-testing--qa) |
+| **DevOps & CI/CD** | CI/CD pipeline automation, immutable dependency locks, concurrency controls, least-privilege permissions, and quality gates. | `1` | [View DevOps Catalog](#devops--cicd) |
+| **AI & LLM Engineering** | Client SDK orchestration, multi-key rotation, model fallback cascades, streaming JSON schemas, and research exploration. | `2` | [View AI & LLM Catalog](#ai--llm-engineering) |
+| **Product Design & UX** | UI/UX design systems, behavioral science, design tokens, responsive layouts, and frontend craftsmanship. | `5` | [View Product Design Catalog](#product-design--ux) |
+| **Growth & Technical SEO** | Generative Engine Optimization (GEO/AEO), technical SEO audits, ICP positioning, and content cluster architecture. | `5` | [View Growth & SEO Catalog](#growth--technical-seo) |
+| **Agent Meta & Tooling** | Skill discovery, capability expansion, and autonomous environment configuration. | `1` | [View Agent Meta Catalog](#agent-meta--tooling) |
 
 ---
 
-## 📦 Domainized Skill Catalog
+## Skill Catalog by Domain
 
-### 🏗️ Software Architecture & Engineering <a id="architecture"></a>
+### Software Architecture
 
-> Staff-level architecture audits, modular design, dependency boundaries, database performance, and idiomatic quality across major frameworks.
+Staff-level architecture audits, modular design, dependency boundaries, database performance, and idiomatic code quality across major application frameworks.
 
-| Skill | Description | Domain Path | Flat Path |
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
-| **`frontend-architecture`** | Staff-level Frontend Architect and Senior React/Next.js Engineer. Use when asked to audit, refactor, modularize, optimize, or improve the code structure, architecture, maintainability, component quality, hooks, state boundaries, API layering, TypeScript types, and performance of React or Next.js projects. | [`domains/architecture/frontend-architecture`](./domains/architecture/frontend-architecture) | [`skills/frontend-architecture`](./skills/frontend-architecture) |
-| **`backend-architecture`** | Staff-level Backend Architect and Senior Node.js/Express Engineer. Use when asked to audit, refactor, modularize, optimize, or improve the code structure, architecture, maintainability, reliability, security, database layer, error handling, and code quality of Node.js and Express projects. | [`domains/architecture/backend-architecture`](./domains/architecture/backend-architecture) | [`skills/backend-architecture`](./skills/backend-architecture) |
-| **`python-architecture`** | Staff-level Python Architect and Senior Backend Engineer. Use when asked to audit, refactor, modularize, optimize, or improve the architecture, code structure, typing, dependency boundaries, security, and performance of FastAPI, Django, Flask, or Python applications. | [`domains/architecture/python-architecture`](./domains/architecture/python-architecture) | [`skills/python-architecture`](./skills/python-architecture) |
-| **`flutter-architecture`** | Staff-level Flutter Architect and Senior Dart Engineer. Use when asked to audit, refactor, modularize, optimize, or improve the architecture, code organization, maintainability, performance, reliability, and code quality of Flutter and Dart applications. | [`domains/architecture/flutter-architecture`](./domains/architecture/flutter-architecture) | [`skills/flutter-architecture`](./skills/flutter-architecture) |
-| **`java-spring-architecture`** | Staff-level Java and Spring Boot Architect. Use when asked to audit, refactor, modularize, optimize, or improve the architecture, maintainability, dependency boundaries, JPA/database layer, Spring Security, performance, and code quality of Java and Spring Boot applications. | [`domains/architecture/java-spring-architecture`](./domains/architecture/java-spring-architecture) | [`skills/java-spring-architecture`](./skills/java-spring-architecture) |
+| **`frontend-architecture`** | Staff Frontend Architect & Senior React/Next.js Engineer specializing in state boundaries, API layering, hook lifecycles, component modularity, and TypeScript typing. | [`domains/architecture/frontend-architecture`](./domains/architecture/frontend-architecture) | [`skills/frontend-architecture`](./skills/frontend-architecture) |
+| **`backend-architecture`** | Staff Backend Architect & Senior Node.js/Express Engineer specializing in layered architecture, database access layers, error middleware, and code maintainability. | [`domains/architecture/backend-architecture`](./domains/architecture/backend-architecture) | [`skills/backend-architecture`](./skills/backend-architecture) |
+| **`python-architecture`** | Staff Python Architect & Senior Backend Engineer specializing in FastAPI, Django, Flask, Pydantic data modeling, typing, and dependency isolation. | [`domains/architecture/python-architecture`](./domains/architecture/python-architecture) | [`skills/python-architecture`](./skills/python-architecture) |
+| **`flutter-architecture`** | Staff Flutter Architect & Senior Dart Engineer specializing in clean state management, repository layering, platform integration, and performance optimization. | [`domains/architecture/flutter-architecture`](./domains/architecture/flutter-architecture) | [`skills/flutter-architecture`](./skills/flutter-architecture) |
+| **`java-spring-architecture`** | Staff Java & Spring Boot Architect specializing in dependency injection boundaries, JPA/Hibernate performance, Spring Security, and enterprise modularity. | [`domains/architecture/java-spring-architecture`](./domains/architecture/java-spring-architecture) | [`skills/java-spring-architecture`](./skills/java-spring-architecture) |
 
 ---
 
-### 🧪 Automated Testing & QA Engineering <a id="testing-qa"></a>
+### Application Security
 
-> Production-ready automated testing, component testing, backend API testing, golden tests, MSW mocks, and E2E testing pipelines.
+Principal application security engineering, threat modeling, vulnerability auditing, and defensive code hardening aligned with OWASP Top 10, OWASP ASVS v4.0, OWASP API Security Top 10, and OWASP MASVS.
 
-| Skill | Description | Domain Path | Flat Path |
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
-| **`frontend-testing`** | Senior Frontend Test Engineer and QA Automation specialist for React and Next.js applications. Use when asked to test frontend components, write unit/integration/E2E tests, set up React Testing Library, Vitest, Jest, Playwright, Cypress, MSW, test hooks, forms, state management, accessibility, data fetching, or build production-ready automated test suites for React or Next.js projects. | [`domains/testing-qa/frontend-testing`](./domains/testing-qa/frontend-testing) | [`skills/frontend-testing`](./skills/frontend-testing) |
-| **`backend-testing`** | Staff/Principal Backend Test Engineer, QA Automation Engineer, and Test Architect specializing in production-grade backend testing. Use when asked to test Node.js/Express/NestJS, Python/Django/Flask, or Java/Spring Boot APIs, databases, transactions, authentication, authorization, integrations, and E2E workflows. | [`domains/testing-qa/backend-testing`](./domains/testing-qa/backend-testing) | [`skills/backend-testing`](./skills/backend-testing) |
-| **`flutter-testing`** | Senior Flutter Test Engineer and QA Automation specialist for Flutter and Dart applications. Use when asked to test Flutter apps, write unit tests, widget tests, integration tests, golden tests, test Bloc/Riverpod/Provider/GetX state management, repositories, Dio/HTTP clients, platform channels, or build production-ready automated test suites for Flutter projects. | [`domains/testing-qa/flutter-testing`](./domains/testing-qa/flutter-testing) | [`skills/flutter-testing`](./skills/flutter-testing) |
+| **`frontend-security`** | Principal Application Security Engineer specializing in React, Next.js, TypeScript, browser security, XSS sinks, CSRF mechanics, CSP, secret redaction, and storage audit. | [`domains/security/frontend-security`](./domains/security/frontend-security) | [`skills/frontend-security`](./skills/frontend-security) |
+| **`backend-security`** | Principal Backend Security Architect specializing in Express, NestJS, Django, Spring Boot, BOLA/IDOR review, SQL/NoSQL injection, SSRF, webhooks, and multi-tenancy. | [`domains/security/backend-security`](./domains/security/backend-security) | [`skills/backend-security`](./skills/backend-security) |
+| **`flutter-security`** | Principal Mobile Security Engineer specializing in Flutter, Android, iOS, OWASP MASVS/MSTG, Keystore/Keychain, biometrics, deep links, WebViews, and platform channels. | [`domains/security/flutter-security`](./domains/security/flutter-security) | [`skills/flutter-security`](./skills/flutter-security) |
 
 ---
 
-### 🚀 DevOps, CI/CD & Infrastructure <a id="devops-infra"></a>
+### Automated Testing & QA
 
-> CI/CD pipeline automation, immutable dependencies, concurrency management, least-privilege security, and quality gates.
+Production-grade automated test suite engineering, test architecture, mock isolation, database transaction verification, and regression test suites.
 
-| Skill | Description | Domain Path | Flat Path |
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
-| **`continuous-integration`** | Staff/Principal DevOps and CI/CD Engineer specializing in GitHub Actions, GitLab CI, Bitbucket Pipelines, Azure DevOps, Docker, monorepos, security automation, caching, supply-chain security, and production-grade automated CI quality gates. Use when asked to design, build, audit, optimize, or repair CI pipelines for any repository. | [`domains/devops-infra/continuous-integration`](./domains/devops-infra/continuous-integration) | [`skills/continuous-integration`](./skills/continuous-integration) |
+| **`frontend-testing`** | Senior Frontend Test Engineer specializing in React Testing Library, Vitest, Jest, Playwright, Cypress, MSW, state transitions, hooks, and accessibility testing. | [`domains/testing-qa/frontend-testing`](./domains/testing-qa/frontend-testing) | [`skills/frontend-testing`](./skills/frontend-testing) |
+| **`backend-testing`** | Principal Backend Test Engineer specializing in API integration tests, database transaction rollbacks, RBAC testing, IDOR test suites, and load mock boundaries. | [`domains/testing-qa/backend-testing`](./domains/testing-qa/backend-testing) | [`skills/backend-testing`](./skills/backend-testing) |
+| **`flutter-testing`** | Senior Flutter Test Engineer specializing in unit tests, widget tests, integration tests, golden UI tests, Dio HTTP mock adapters, and Bloc/Riverpod testing. | [`domains/testing-qa/flutter-testing`](./domains/testing-qa/flutter-testing) | [`skills/flutter-testing`](./skills/flutter-testing) |
 
 ---
 
-### 🤖 AI & LLM Engineering <a id="ai-llm"></a>
+### DevOps & CI/CD
 
-> Multi-model LLM client SDKs, multi-key rotation, model fallback cascades, streaming, and deep learning research exploration.
+Continuous integration and automated delivery engineering, pipeline optimization, concurrency management, and automated release quality gates.
 
-| Skill | Description | Domain Path | Flat Path |
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
-| **`openrouter-client-sdks`** | Comprehensive guide, recipes, and type-safe patterns for OpenRouter Client SDKs (@openrouter/sdk in TypeScript, openrouter in Python, and go-sdk in Go). Use when implementing LLM inference across 400+ models, real-time streaming, tool/function calling, structured JSON outputs, model fallback cascades, provider routing, multi-key rotation, embeddings, and API key management. | [`domains/ai-llm/openrouter-client-sdks`](./domains/ai-llm/openrouter-client-sdks) | [`skills/openrouter-client-sdks`](./skills/openrouter-client-sdks) |
-| **`ai-research-explore`** | Rigor Explore compatible skill slug for meaningful and potentially novel deep learning research candidates. Use when the researcher has chosen the task family, dataset, benchmark, evaluation method, provided SOTA references, and wants candidate-only exploration on top of `current_research` with auditable repo understanding, idea gating, fair comparison, and governed experiments written to `explore_outputs/`. Do not use for README-first trusted reproduction, open-ended direction finding, narrow code-only or run-only exploration, passive repo analysis, verified novelty claims, or implicit experimentation. | [`domains/ai-llm/ai-research-explore`](./domains/ai-llm/ai-research-explore) | [`skills/ai-research-explore`](./skills/ai-research-explore) |
+| **`continuous-integration`** | Principal DevOps & CI/CD Engineer specializing in GitHub Actions, DAG workflow design, frozen dependency locks (`npm ci`), caching, and production release gates. | [`domains/devops-infra/continuous-integration`](./domains/devops-infra/continuous-integration) | [`skills/continuous-integration`](./skills/continuous-integration) |
 
 ---
 
-### 🎨 Product Design & Behavioral UX <a id="product-design"></a>
+### AI & LLM Engineering
 
-> UI/UX design systems, behavioral science & habit formation, design tokens, and distinctive frontend craftsmanship.
+Multi-model LLM integration, client SDK orchestration, dynamic model fallback cascades, structured JSON schema extraction, and deep learning research workflows.
 
-| Skill | Description | Domain Path | Flat Path |
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
-| **`product-designer`** | Product design across UI/UX, design systems, prototyping, and user research. Use when creating user journey maps, building wireframes, defining design tokens and component systems, planning usability tests, or establishing design principles. | [`domains/product-design/product-designer`](./domains/product-design/product-designer) | [`skills/product-designer`](./skills/product-designer) |
-| **`frontend-design`** | Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics. | [`domains/product-design/frontend-design`](./domains/product-design/frontend-design) | [`skills/frontend-design`](./skills/frontend-design) |
-| **`behavioral-product-design`** | Help users apply behavioral science to product design. Use when someone is designing for habit formation, reducing friction, applying psychology to UX, increasing retention through behavioral principles, or using nudges to influence user behavior. | [`domains/product-design/behavioral-product-design`](./domains/product-design/behavioral-product-design) | [`skills/behavioral-product-design`](./skills/behavioral-product-design) |
-| **`brand-guidelines`** | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply. | [`domains/product-design/brand-guidelines`](./domains/product-design/brand-guidelines) | [`skills/brand-guidelines`](./skills/brand-guidelines) |
-| **`startup-ideation`** | Help users generate and evaluate startup ideas. Use when someone is brainstorming business ideas, trying to find a startup concept, evaluating whether an idea is worth pursuing, or looking for unique market opportunities. | [`domains/product-design/startup-ideation`](./domains/product-design/startup-ideation) | [`skills/startup-ideation`](./skills/startup-ideation) |
+| **`openrouter-client-sdks`** | AI Systems Engineer specializing in OpenRouter SDKs (@openrouter/sdk, Python, Go), multi-key load balancing, model failover cascades, streaming, and tool calling. | [`domains/ai-llm/openrouter-client-sdks`](./domains/ai-llm/openrouter-client-sdks) | [`skills/openrouter-client-sdks`](./skills/openrouter-client-sdks) |
+| **`ai-research-explore`** | Deep Learning Research Engineer specializing in candidate exploration, benchmark reproducibility, governed experimentation, and empirical evaluation. | [`domains/ai-llm/ai-research-explore`](./domains/ai-llm/ai-research-explore) | [`skills/ai-research-explore`](./skills/ai-research-explore) |
 
 ---
 
-### 📈 Growth, Marketing & AI SEO <a id="marketing-seo"></a>
+### Product Design & UX
 
-> Generative Engine Optimization (GEO/AEO), technical SEO audits, ICP positioning, and content cluster strategy.
+Product design systems, behavioral science, design tokens, user experience architecture, and distinctive frontend craftsmanship.
 
-| Skill | Description | Domain Path | Flat Path |
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
-| **`product-marketing`** | "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' 'ideal customer profile,' or wants to avoid repeating foundational information across marketing tasks. Use this at the start of any new project before using other marketing skills — it creates `.agents/product-marketing.md` that all other skills reference for product, audience, and positioning context." | [`domains/marketing-seo/product-marketing`](./domains/marketing-seo/product-marketing) | [`skills/product-marketing`](./skills/product-marketing) |
-| **`content-strategy`** | When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions "content strategy," "what should I write about," "content ideas," "blog strategy," "topic clusters," "content planning," "editorial calendar," "content marketing," "content roadmap," "what content should I create," "blog topics," "content pillars," or "I don't know what to write." Use this whenever someone needs help deciding what content to produce, not just writing it. For writing individual pieces, see copywriting. For SEO-specific audits, see seo-audit. For social media content specifically, see social. | [`domains/marketing-seo/content-strategy`](./domains/marketing-seo/content-strategy) | [`skills/content-strategy`](./skills/content-strategy) |
-| **`seo`** | Optimize for search engine visibility and ranking. Use when asked to "improve SEO", "optimize for search", "fix meta tags", "add structured data", "sitemap optimization", or "search engine optimization". | [`domains/marketing-seo/seo`](./domains/marketing-seo/seo) | [`skills/seo`](./skills/seo) |
-| **`seo-audit`** | When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo. | [`domains/marketing-seo/seo-audit`](./domains/marketing-seo/seo-audit) | [`skills/seo-audit`](./skills/seo-audit) |
-| **`ai-seo`** | "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' 'optimize for Claude/Gemini,' 'llms.txt,' 'OKF,' 'Open Knowledge Format,' 'knowledge bundle,' or 'agent-readable site.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema." | [`domains/marketing-seo/ai-seo`](./domains/marketing-seo/ai-seo) | [`skills/ai-seo`](./skills/ai-seo) |
+| **`frontend-design`** | Senior Frontend UI/UX Designer creating distinctive, production-grade interfaces, bespoke design tokens, micro-interactions, and responsive layouts. | [`domains/product-design/frontend-design`](./domains/product-design/frontend-design) | [`skills/frontend-design`](./skills/frontend-design) |
+| **`product-designer`** | Staff Product Designer specializing in user journey mapping, design systems, wireframing, component tokens, usability testing, and UX principles. | [`domains/product-design/product-designer`](./domains/product-design/product-designer) | [`skills/product-designer`](./skills/product-designer) |
+| **`behavioral-product-design`** | Behavioral Product Designer applying cognitive psychology, habit formation loops, friction reduction, and behavioral nudges to product UX. | [`domains/product-design/behavioral-product-design`](./domains/product-design/behavioral-product-design) | [`skills/behavioral-product-design`](./skills/behavioral-product-design) |
+| **`brand-guidelines`** | Brand Identity Architect applying official typography, brand color systems, and visual formatting standards across application artifacts. | [`domains/product-design/brand-guidelines`](./domains/product-design/brand-guidelines) | [`skills/brand-guidelines`](./skills/brand-guidelines) |
+| **`startup-ideation`** | Venture Product Strategist generating and evaluating startup hypotheses, market opportunity sizing, unit economics, and competitive moats. | [`domains/product-design/startup-ideation`](./domains/product-design/startup-ideation) | [`skills/startup-ideation`](./skills/startup-ideation) |
 
 ---
 
----
+### Growth & Technical SEO
 
-### 🛡️ Application Security & AppSec <a id="security"></a>
+Generative Engine Optimization (GEO/AEO), technical on-page SEO audits, content cluster strategy, and product marketing positioning.
 
-> Production-grade security audits, OWASP ASVS/API verification, threat modeling, XSS/CSRF review, secret detection, and frontend hardening.
-
-| Skill | Description | Domain Path | Flat Path |
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
-| **`backend-security`** | Principal Application Security Engineer and Backend Security Architect specializing in Express, NestJS, Django, Flask, Spring Boot, REST APIs, GraphQL, database security, authentication, authorization, cryptography, SSRF/injection review, multi-tenancy, and production-grade backend vulnerability audits. Use when asked to perform a comprehensive security audit, threat model, API security assessment, OWASP ASVS/API verification, authorization/IDOR review, or backend security hardening. | [`domains/security/backend-security`](./domains/security/backend-security) | [`skills/backend-security`](./skills/backend-security) |
-| **`flutter-security`** | Principal Mobile Application Security Engineer specializing in Flutter, Dart, Android, iOS, OWASP MASVS/MSTG, secure storage (Keychain/Keystore), cryptography, biometrics, deep links, WebViews, platform channels, and mobile vulnerability audits. Use when asked to perform a production-grade security audit, threat model, MASVS assessment, or mobile application hardening. | [`domains/security/flutter-security`](./domains/security/flutter-security) | [`skills/flutter-security`](./skills/flutter-security) |
-| **`frontend-security`** | Principal Application Security Engineer specializing in React, Next.js, TypeScript, browser security, OWASP, web application security, authentication, authorization, and secure frontend architecture. Use when asked to perform a production-grade security audit, threat model, vulnerability assessment, XSS/CSRF review, secret detection, browser storage inspection, or frontend security hardening. | [`domains/security/frontend-security`](./domains/security/frontend-security) | [`skills/frontend-security`](./skills/frontend-security) |
-
-### ⚡ Agent Meta & Tooling <a id="agent-meta"></a>
-
-> Skills for skill discovery, agent capability expansion, and self-configuration.
-
-| Skill | Description | Domain Path | Flat Path |
-| :--- | :--- | :--- | :--- |
-| **`find-skills`** | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill. | [`domains/agent-meta/find-skills`](./domains/agent-meta/find-skills) | [`skills/find-skills`](./skills/find-skills) |
+| **`ai-seo`** | Generative Engine Optimization (GEO/AEO) specialist optimizing sites for LLM answer engines, AI citations, Open Knowledge Format (OKF), and `llms.txt`. | [`domains/marketing-seo/ai-seo`](./domains/marketing-seo/ai-seo) | [`skills/ai-seo`](./skills/ai-seo) |
+| **`seo-audit`** | Principal Technical SEO Auditor diagnosing crawl errors, Core Web Vitals, metadata indexing, structured data, and search visibility regressions. | [`domains/marketing-seo/seo-audit`](./domains/marketing-seo/seo-audit) | [`skills/seo-audit`](./skills/seo-audit) |
+| **`seo`** | Search Engine Optimization Specialist implementing JSON-LD schema, OpenGraph tags, sitemaps, canonical links, and on-page ranking factors. | [`domains/marketing-seo/seo`](./domains/marketing-seo/seo) | [`skills/seo`](./skills/seo) |
+| **`content-strategy`** | Content Strategy Director architecting topical authority clusters, editorial calendars, content pillars, and conversion-focused content funnels. | [`domains/marketing-seo/content-strategy`](./domains/marketing-seo/content-strategy) | [`skills/content-strategy`](./skills/content-strategy) |
+| **`product-marketing`** | Product Marketing Director defining Ideal Customer Profiles (ICPs), product positioning matrices, value propositions, and messaging frameworks. | [`domains/marketing-seo/product-marketing`](./domains/marketing-seo/product-marketing) | [`skills/product-marketing`](./skills/product-marketing) |
 
 ---
 
-## 🚀 Installation & Usage
+### Agent Meta & Tooling
 
-### 1. Install by Functional Domain
-Install an entire domain of specialized skills into your environment:
+Meta-skills enabling capability discovery, runtime environment introspection, and autonomous agent configuration.
+
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
+| :--- | :--- | :--- | :--- |
+| **`find-skills`** | Agent Skill Discovery Specialist helping users discover, evaluate, and install applicable skills for their immediate development tasks. | [`domains/agent-meta/find-skills`](./domains/agent-meta/find-skills) | [`skills/find-skills`](./skills/find-skills) |
+
+---
+
+## Architectural Principles
+
+Every skill in this catalog is engineered to adhere to strict operational standards:
+
+1. **Zero Framework Assumption**: Skills inspect the actual codebase manifests and source files before making recommendations, avoiding rigid assumptions regarding versions, routers, or libraries.
+2. **Progressive Disclosure**: Only skill names and descriptions are exposed in the initial context window; detailed system instructions and runbooks load dynamically on demand.
+3. **Audit-First Discipline**: Security and architecture skills prioritize comprehensive code trace analysis and evidence generation before recommending surgical remediations.
+4. **Idempotence & Non-Destructive Operation**: Guidelines explicitly forbid destructive commands, data deletion, or unauthorized external requests.
+5. **Standardized Severity & Reporting**: Vulnerability and QA findings follow CVSS-aligned severity tiers (Critical, High, Medium, Low, Informational) with concrete reproduction steps and regression test assertions.
+
+---
+
+## Integration and Installation
+
+### 1. Workspace Installation (Project-Specific)
+
+To mount these skills within an active project workspace, copy the desired skill directories into the project's `.agents/skills/` directory:
 
 ```bash
-# Example: Install all Architecture skills globally (Windows)
-cp -r domains/architecture/* %USERPROFILE%\.gemini\antigravity\builtin\skills\
+# Example: Adding frontend-security and continuous-integration to your repository
+mkdir -p .agents/skills/frontend-security
+mkdir -p .agents/skills/continuous-integration
 
-# Example: Install all Testing & QA skills in your project workspace
-mkdir -p .agents/skills
-cp -r domains/testing-qa/* .agents/skills/
+cp -r /path/to/AgentSkills/skills/frontend-security/* .agents/skills/frontend-security/
+cp -r /path/to/AgentSkills/skills/continuous-integration/* .agents/skills/continuous-integration/
 ```
 
-### 2. Install Individual Skills
-Copy any specific skill into your global directory or project:
+### 2. Global Installation (Machine-Wide)
 
-```bash
-# Windows (Global)
-cp -r domains/testing-qa/backend-testing %USERPROFILE%\.gemini\antigravity\builtin\skills\
+To make a skill available globally across all Antigravity workspaces on your workstation, place the skill folder in the Antigravity global built-in skills directory:
 
-# macOS / Linux (Global)
-cp -r domains/testing-qa/backend-testing ~/.gemini/antigravity/builtin/skills/
+* **Windows**: `C:\Users\<Username>\.gemini\antigravity\builtin\skills\<skill-name>\SKILL.md`
+* **macOS / Linux**: `~/.gemini/antigravity/builtin/skills/<skill-name>/SKILL.md`
+
+---
+
+## Skill Directory Structure
+
+Each skill adheres to the canonical Antigravity specification:
+
+```text
+skills/<skill-name>/
+├── SKILL.md                 # Primary instruction document with YAML frontmatter
+├── references/              # (Optional) Domain documentation and standards
+├── examples/                # (Optional) Reference implementations and code samples
+└── scripts/                 # (Optional) Diagnostic and automation utilities
 ```
 
-### 3. Install All Skills
-```bash
-# Copy all skills to your project's workspace
-cp -r skills/* .agents/skills/
+### Canonical SKILL.md Schema
+
+```yaml
+---
+name: skill-identifier
+description: >-
+  Detailed description of the skill role, triggers, and technical scope.
+license: MIT
+---
 ```
 
 ---
 
-## 🏛️ Architecture & Compatibility
-All skills strictly adhere to the standard `SKILL.md` specification with YAML frontmatter metadata, supporting **progressive disclosure**, isolated execution, and type-safe workflows.
+## Repository Governance
 
----
-
-## 📄 License
-MIT © Yash Parmar
+* **Maintainer**: Yash Parmar (`@Yashparmar1125`)
+* **Repository**: [https://github.com/Yashparmar1125/AgentSkills](https://github.com/Yashparmar1125/AgentSkills)
+* **License**: MIT
