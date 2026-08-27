@@ -4,7 +4,7 @@ A curated collection of production-grade, domain-driven AI agent skills built fo
 
 ---
 
-## 🧭 Domain Navigation (22 Skills)
+## 🧭 Domain Navigation (23 Skills)
 
 | Domain | Focus | Skill Count | Jump |
 | :--- | :--- | :---: | :--- |
@@ -14,6 +14,7 @@ A curated collection of production-grade, domain-driven AI agent skills built fo
 | **🤖 AI & LLM Engineering** | Multi-model LLM client SDKs, multi-key rotation, model fallback cascades, streaming, and deep learning research exploration. | `2` | [Browse ↓](#-ai-llm) |
 | **🎨 Product Design & Behavioral UX** | UI/UX design systems, behavioral science & habit formation, design tokens, and distinctive frontend craftsmanship. | `5` | [Browse ↓](#-product-design) |
 | **📈 Growth, Marketing & AI SEO** | Generative Engine Optimization (GEO/AEO), technical SEO audits, ICP positioning, and content cluster strategy. | `5` | [Browse ↓](#-marketing-seo) |
+| **🛡️ Application Security & AppSec** | Production-grade security audits, OWASP ASVS/API verification, threat modeling, XSS/CSRF review, secret detection, and frontend hardening. | `1` | [Browse ↓](#-security) |
 | **⚡ Agent Meta & Tooling** | Skills for skill discovery, agent capability expansion, and self-configuration. | `1` | [Browse ↓](#-agent-meta) |
 
 ---
@@ -94,6 +95,16 @@ A curated collection of production-grade, domain-driven AI agent skills built fo
 | **`ai-seo`** | "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' 'optimize for Claude/Gemini,' 'llms.txt,' 'OKF,' 'Open Knowledge Format,' 'knowledge bundle,' or 'agent-readable site.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema." | [`domains/marketing-seo/ai-seo`](./domains/marketing-seo/ai-seo) | [`skills/ai-seo`](./skills/ai-seo) |
 
 ---
+
+---
+
+### 🛡️ Application Security & AppSec <a id="security"></a>
+
+> Production-grade security audits, OWASP ASVS/API verification, threat modeling, XSS/CSRF review, secret detection, and frontend hardening.
+
+| Skill | Description | Domain Path | Flat Path |
+| :--- | :--- | :--- | :--- |
+| **`frontend-security`** | Principal Application Security Engineer specializing in React, Next.js, TypeScript, browser security, OWASP, web application security, authentication, authorization, and secure frontend architecture. Use when asked to perform a production-grade security audit, threat model, vulnerability assessment, XSS/CSRF review, secret detection, browser storage inspection, or frontend security hardening. | [`domains/security/frontend-security`](./domains/security/frontend-security) | [`skills/frontend-security`](./skills/frontend-security) |
 
 ### ⚡ Agent Meta & Tooling <a id="agent-meta"></a>
 
