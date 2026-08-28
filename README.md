@@ -6,10 +6,11 @@ A standardized collection of production-grade, domain-driven AI agent skills des
 
 ## Executive Overview
 
-This repository houses 29 modular, framework-agnostic agent skills organized across 8 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, infrastructure as code, and product design.
+This repository houses 30 modular, framework-agnostic agent skills organized across 9 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, infrastructure as code, and product design.
 
 ### Key Capabilities
 
+* **Agile SDLC & Engineering Orchestration**: Master discovery $\rightarrow$ impact analysis $\rightarrow$ user stories $\rightarrow$ acceptance criteria $\rightarrow$ technical design $\rightarrow$ implementation $\rightarrow$ automated QA $\rightarrow$ release governance.
 * **Software Architecture**: Staff-level audits, modular refactoring, API contract definitions, and dependency boundary enforcement across React, Next.js, Node.js, Python, Flutter, and Java Spring Boot.
 * **Application Security (AppSec)**: Comprehensive vulnerability auditing adhering to OWASP Top 10, OWASP ASVS v4.0, OWASP API Security Top 10, OWASP MASVS/MSTG, and Indian Software Compliance (DPDP Act, CERT-In, RBI, UIDAI) for frontend, backend, and mobile applications.
 * **Automated Testing & QA**: Automated test suite construction spanning Vitest, Jest, Playwright, React Testing Library, Mock Service Worker (MSW), integration pipelines, and database transaction testing.
@@ -22,6 +23,7 @@ This repository houses 29 modular, framework-agnostic agent skills organized acr
 
 | Domain | Technical Focus | Skills | Direct Link |
 | :--- | :--- | :---: | :--- |
+| **Process & SDLC Orchestration** | Master SDLC orchestration, Business Analyst discovery, user stories, acceptance criteria, tech design, and release gates. | `1` | [View SDLC Catalog](#process--sdlc-orchestration) |
 | **Software Architecture** | Full-stack architecture audits, state management, dependency boundaries, database performance, and idiomatic quality. | `5` | [View Architecture Catalog](#software-architecture) |
 | **Application Security** | Production security audits, OWASP verification, threat modeling, Indian regulatory compliance (DPDP/CERT-In), and secret detection. | `4` | [View Security Catalog](#application-security) |
 | **Automated Testing & QA** | Automated test suites, integration tests, E2E pipelines, MSW mock boundaries, and transaction rollback verification. | `3` | [View Testing Catalog](#automated-testing--qa) |
@@ -34,6 +36,16 @@ This repository houses 29 modular, framework-agnostic agent skills organized acr
 ---
 
 ## Skill Catalog by Domain
+
+### Process & SDLC Orchestration
+
+Master full-lifecycle Agile software engineering orchestration from requirement discovery, impact analysis, user story generation, and Given-When-Then acceptance criteria to technical task planning and release quality gates.
+
+| Skill Identifier | Role / Specialization | Domain Path | Flat Path |
+| :--- | :--- | :--- | :--- |
+| **`agile-sdlc`** | Master Agile SDLC Orchestrator operating as BA + PM + Tech Lead + Full-Stack Developer + QA Lead. Enforces discovery, impact tracing, Given-When-Then ACs, and release gates. | [`domains/process/agile-sdlc`](./domains/process/agile-sdlc) | [`skills/agile-sdlc`](./skills/agile-sdlc) |
+
+---
 
 ### Software Architecture
 
