@@ -6,12 +6,12 @@ A standardized collection of production-grade, domain-driven AI agent skills des
 
 ## Executive Overview
 
-This repository houses 28 modular, framework-agnostic agent skills organized across 8 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, infrastructure as code, and product design.
+This repository houses 29 modular, framework-agnostic agent skills organized across 8 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, infrastructure as code, and product design.
 
 ### Key Capabilities
 
 * **Software Architecture**: Staff-level audits, modular refactoring, API contract definitions, and dependency boundary enforcement across React, Next.js, Node.js, Python, Flutter, and Java Spring Boot.
-* **Application Security (AppSec)**: Comprehensive vulnerability auditing adhering to OWASP Top 10, OWASP ASVS v4.0, OWASP API Security Top 10, and OWASP MASVS/MSTG for frontend, backend, and mobile applications.
+* **Application Security (AppSec)**: Comprehensive vulnerability auditing adhering to OWASP Top 10, OWASP ASVS v4.0, OWASP API Security Top 10, OWASP MASVS/MSTG, and Indian Software Compliance (DPDP Act, CERT-In, RBI, UIDAI) for frontend, backend, and mobile applications.
 * **Automated Testing & QA**: Automated test suite construction spanning Vitest, Jest, Playwright, React Testing Library, Mock Service Worker (MSW), integration pipelines, and database transaction testing.
 * **DevOps, IaC & Continuous Delivery**: Production Infrastructure as Code (Terraform), server automation (Ansible), CI/CD pipelines (GitHub Actions), progressive delivery, and release quality gates.
 * **AI & LLM Integration**: Multi-model inference, OpenRouter SDK orchestration, model fallback cascades, rate-limit backoff, and deep learning research exploration.
@@ -23,7 +23,7 @@ This repository houses 28 modular, framework-agnostic agent skills organized acr
 | Domain | Technical Focus | Skills | Direct Link |
 | :--- | :--- | :---: | :--- |
 | **Software Architecture** | Full-stack architecture audits, state management, dependency boundaries, database performance, and idiomatic quality. | `5` | [View Architecture Catalog](#software-architecture) |
-| **Application Security** | Production security audits, OWASP verification, threat modeling, XSS/CSRF review, IDOR/BOLA analysis, and secret detection. | `3` | [View Security Catalog](#application-security) |
+| **Application Security** | Production security audits, OWASP verification, threat modeling, Indian regulatory compliance (DPDP/CERT-In), and secret detection. | `4` | [View Security Catalog](#application-security) |
 | **Automated Testing & QA** | Automated test suites, integration tests, E2E pipelines, MSW mock boundaries, and transaction rollback verification. | `3` | [View Testing Catalog](#automated-testing--qa) |
 | **DevOps, IaC & CI/CD** | Terraform infrastructure-as-code, Ansible automation, continuous delivery pipelines, and release gates. | `4` | [View DevOps Catalog](#devops-iac--cicd) |
 | **AI & LLM Engineering** | Client SDK orchestration, multi-key rotation, model fallback cascades, streaming JSON schemas, and research exploration. | `2` | [View AI & LLM Catalog](#ai--llm-engineering) |
@@ -58,6 +58,7 @@ Principal application security engineering, threat modeling, vulnerability audit
 | **`frontend-security`** | Principal Application Security Engineer specializing in React, Next.js, TypeScript, browser security, XSS sinks, CSRF mechanics, CSP, secret redaction, and storage audit. | [`domains/security/frontend-security`](./domains/security/frontend-security) | [`skills/frontend-security`](./skills/frontend-security) |
 | **`backend-security`** | Principal Backend Security Architect specializing in Express, NestJS, Django, Spring Boot, BOLA/IDOR review, SQL/NoSQL injection, SSRF, webhooks, and multi-tenancy. | [`domains/security/backend-security`](./domains/security/backend-security) | [`skills/backend-security`](./skills/backend-security) |
 | **`flutter-security`** | Principal Mobile Security Engineer specializing in Flutter, Android, iOS, OWASP MASVS/MSTG, Keystore/Keychain, biometrics, deep links, WebViews, and platform channels. | [`domains/security/flutter-security`](./domains/security/flutter-security) | [`skills/flutter-security`](./skills/flutter-security) |
+| **`indian-compliance-security`** | Principal Security & Compliance Architect for Indian software engineering (DPDP Act, CERT-In, OWASP ASVS, RBI, UIDAI, SEBI), data inventory, and production release gates. | [`domains/security/indian-compliance-security`](./domains/security/indian-compliance-security) | [`skills/indian-compliance-security`](./skills/indian-compliance-security) |
 
 ---
 
