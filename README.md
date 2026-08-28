@@ -6,11 +6,12 @@ A standardized collection of production-grade, domain-driven AI agent skills des
 
 ## Executive Overview
 
-This repository houses 30 modular, framework-agnostic agent skills organized across 9 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, infrastructure as code, and product design.
+This repository houses 31 modular, framework-agnostic agent skills organized across 9 primary technical domains. Each skill provides explicit system prompts, threat models, testing methodologies, and architectural guidelines that enable autonomous agents to perform staff-level engineering, security auditing, QA automation, infrastructure as code, and product design.
 
 ### Key Capabilities
 
 * **Agile SDLC & Engineering Orchestration**: Master discovery $\rightarrow$ impact analysis $\rightarrow$ user stories $\rightarrow$ acceptance criteria $\rightarrow$ technical design $\rightarrow$ implementation $\rightarrow$ automated QA $\rightarrow$ release governance.
+* **Evidence-Driven UI/UX & Design Systems**: Multi-source research (MCP, web, codebase), WCAG 2.2 accessibility, 15-state UI completeness, heuristic review, and architecture-preserving implementation.
 * **Software Architecture**: Staff-level audits, modular refactoring, API contract definitions, and dependency boundary enforcement across React, Next.js, Node.js, Python, Flutter, and Java Spring Boot.
 * **Application Security (AppSec)**: Comprehensive vulnerability auditing adhering to OWASP Top 10, OWASP ASVS v4.0, OWASP API Security Top 10, OWASP MASVS/MSTG, and Indian Software Compliance (DPDP Act, CERT-In, RBI, UIDAI) for frontend, backend, and mobile applications.
 * **Automated Testing & QA**: Automated test suite construction spanning Vitest, Jest, Playwright, React Testing Library, Mock Service Worker (MSW), integration pipelines, and database transaction testing.
@@ -29,7 +30,7 @@ This repository houses 30 modular, framework-agnostic agent skills organized acr
 | **Automated Testing & QA** | Automated test suites, integration tests, E2E pipelines, MSW mock boundaries, and transaction rollback verification. | `3` | [View Testing Catalog](#automated-testing--qa) |
 | **DevOps, IaC & CI/CD** | Terraform infrastructure-as-code, Ansible automation, continuous delivery pipelines, and release gates. | `4` | [View DevOps Catalog](#devops-iac--cicd) |
 | **AI & LLM Engineering** | Client SDK orchestration, multi-key rotation, model fallback cascades, streaming JSON schemas, and research exploration. | `2` | [View AI & LLM Catalog](#ai--llm-engineering) |
-| **Product Design & UX** | UI/UX design systems, behavioral science, design tokens, responsive layouts, and frontend craftsmanship. | `5` | [View Product Design Catalog](#product-design--ux) |
+| **Product Design & UX** | Evidence-driven UI/UX design systems, behavioral science, design tokens, responsive layouts, and WCAG accessibility. | `6` | [View Product Design Catalog](#product-design--ux) |
 | **Growth & Technical SEO** | Generative Engine Optimization (GEO/AEO), technical SEO audits, ICP positioning, and content cluster architecture. | `5` | [View Growth & SEO Catalog](#growth--technical-seo) |
 | **Agent Meta & Tooling** | Skill discovery, capability expansion, and autonomous environment configuration. | `1` | [View Agent Meta Catalog](#agent-meta--tooling) |
 
@@ -116,6 +117,7 @@ Product design systems, behavioral science, design tokens, user experience archi
 
 | Skill Identifier | Role / Specialization | Domain Path | Flat Path |
 | :--- | :--- | :--- | :--- |
+| **`ui-ux-engineering`** | Principal Product Designer & UX Architect combining UX research, WCAG 2.2 accessibility, 15-state UI models, and design token engineering. | [`domains/product-design/ui-ux-engineering`](./domains/product-design/ui-ux-engineering) | [`skills/ui-ux-engineering`](./skills/ui-ux-engineering) |
 | **`frontend-design`** | Senior Frontend UI/UX Designer creating distinctive, production-grade interfaces, bespoke design tokens, micro-interactions, and responsive layouts. | [`domains/product-design/frontend-design`](./domains/product-design/frontend-design) | [`skills/frontend-design`](./skills/frontend-design) |
 | **`product-designer`** | Staff Product Designer specializing in user journey mapping, design systems, wireframing, component tokens, usability testing, and UX principles. | [`domains/product-design/product-designer`](./domains/product-design/product-designer) | [`skills/product-designer`](./skills/product-designer) |
 | **`behavioral-product-design`** | Behavioral Product Designer applying cognitive psychology, habit formation loops, friction reduction, and behavioral nudges to product UX. | [`domains/product-design/behavioral-product-design`](./domains/product-design/behavioral-product-design) | [`skills/behavioral-product-design`](./skills/behavioral-product-design) |
